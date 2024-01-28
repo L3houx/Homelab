@@ -1,0 +1,24 @@
+name: homarr
+services:
+  homarr:
+    image: ghcr.io/ajnart/homarr:latest
+    environment:
+      - PGID=1000
+      - PUID=1000
+    ports:
+      - mode: ingress
+        target: 7575
+        published: "7575"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /opt/homarr/configs
+        target: /app/data/configs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /opt/homarr/icons
+        target: /app/public/icons
+        bind:
+          create_host_path: true

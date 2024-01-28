@@ -1,0 +1,1014 @@
+{
+    "schemaVersion": 1,
+    "configProperties": {
+      "name": "default"
+    },
+    "categories": [
+      {
+        "id": "4ad7dade-c3b6-46ab-b385-a3f6fa6d9186",
+        "name": "Homelab",
+        "position": 2
+      },
+      {
+        "id": "1a0edc5a-c410-4018-b23c-17691733032f",
+        "name": "Networking",
+        "position": 1
+      },
+      {
+        "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3",
+        "name": "Tools",
+        "position": 4,
+        "type": "category"
+      }
+    ],
+    "wrappers": [
+      {
+        "id": "default",
+        "position": 0
+      },
+      {
+        "id": "9501505c-8b3c-4b9c-be91-1fd9ad301c23",
+        "position": 1
+      },
+      {
+        "id": "1b2306e7-1a38-4f42-9455-a032d9fa03a6",
+        "position": 2
+      },
+      {
+        "id": "3492f9b9-4aca-4696-a8bc-fd65f347c8b5",
+        "position": 3
+      },
+      {
+        "id": "833676d8-1339-4cd3-a40d-b5b442a5218c",
+        "position": 5
+      }
+    ],
+    "apps": [
+      {
+        "id": "3334547c-d4cf-4f35-a6a7-d7b775a47774",
+        "name": "Nginx Proxy Manager",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://nginxproxymanager.com/icon.png",
+          "appNameStatus": "normal",
+          "appNameFontSize": 16,
+          "positionAppName": "column",
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200",
+            "301",
+            "302",
+            "304",
+            "307",
+            "308"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "70fde853-ca52-41f9-965c-f66f5e5c08ee",
+        "name": "Uptime Kuma",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://cdn.jsdelivr.net/gh/loganmarchione/homelab-svg-assets/assets/uptimekuma.svg",
+          "appNameStatus": "normal",
+          "positionAppName": "column",
+          "appNameFontSize": 16,
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 10,
+              "y": 0
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          },
+          "md": {
+            "location": {
+              "x": 2,
+              "y": 1
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "22631bc8-9cb3-4554-b933-37471758fcb3",
+        "name": "Yacht Lab",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/yacht.png",
+          "appNameStatus": "normal",
+          "positionAppName": "column",
+          "appNameFontSize": 16,
+          "lineClam/ppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 0,
+              "y": 2
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          },
+          "md": {
+            "location": {
+              "x": 1,
+              "y": 1
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "b1b0d8fa-088e-4728-acdc-d9fc3ab4afa1",
+        "name": "Portainer Lab",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/portainer.png",
+          "appNameStatus": "normal",
+          "positionAppName": "column",
+          "appNameFontSize": 16,
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3"
+          }
+        },
+        "shape": {
+          "md": {
+            "location": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          },
+          "lg": {
+            "location": {
+              "x": 0,
+              "y": 1
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "d760380b-08db-47e7-a5ad-3b90665c02d7",
+        "name": "CasaOs",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://noted.lol/content/images/size/w1000/2023/01/casaos.png",
+          "appNameStatus": "normal",
+          "appNameFontSize": 16,
+          "positionAppName": "column",
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200",
+            "301",
+            "302",
+            "304",
+            "307",
+            "308"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 2,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "a3f1520b-dfa2-418e-b0c4-1b57a766a15d",
+        "name": "Portainer DMZ",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/portainer.png",
+          "appNameStatus": "normal",
+          "positionAppName": "column",
+          "appNameFontSize": 16,
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3"
+          }
+        },
+        "shape": {
+          "md": {
+            "location": {
+              "x": 2,
+              "y": 0
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          },
+          "lg": {
+            "location": {
+              "x": 5,
+              "y": 0
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "f04d9b2e-0178-41b9-a458-9b46357e5da3",
+        "name": "Guacamole",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/guacamole.png",
+          "appNameStatus": "normal",
+          "appNameFontSize": 16,
+          "positionAppName": "column",
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200",
+            "301",
+            "302",
+            "304",
+            "307",
+            "308"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 0,
+              "y": 3
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "9e6e095d-1dfc-4fbc-a068-f4e8451ff2f2",
+        "name": "Unifi",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/unifi.png",
+          "appNameStatus": "normal",
+          "positionAppName": "column",
+          "appNameFontSize": 16,
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "1a0edc5a-c410-4018-b23c-17691733032f"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 1,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          },
+          "md": {
+            "location": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "bba580b2-8548-43ab-8750-e93b722f20e6",
+        "name": "Pihole",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://wp-cdn.pi-hole.net/wp-content/uploads/2016/12/Vortex-R.png",
+          "appNameStatus": "normal",
+          "positionAppName": "column",
+          "appNameFontSize": 16,
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": ""
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "1a0edc5a-c410-4018-b23c-17691733032f"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 2,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          },
+          "md": {
+            "location": {
+              "x": 2,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "e8a046b1-62cb-4dd2-8978-03b7060c025a",
+        "name": "Traefik",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/traefik.png",
+          "appNameStatus": "normal",
+          "positionAppName": "column",
+          "appNameFontSize": 16,
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 6,
+              "y": 1
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          },
+          "md": {
+            "location": {
+              "x": 0,
+              "y": 1
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "b808bfcd-9de6-4a1a-bf1e-ad0fe9b822f8",
+        "name": "pfSense",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pfsense.png",
+          "appNameStatus": "normal",
+          "positionAppName": "column",
+          "appNameFontSize": 16,
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "1a0edc5a-c410-4018-b23c-17691733032f"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          },
+          "md": {
+            "location": {
+              "x": 1,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "294394a6-8afb-4de7-a320-2f72e693e636",
+        "name": "Pwndrop",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pwndrop.png",
+          "appNameStatus": "normal",
+          "positionAppName": "column",
+          "appNameFontSize": 16,
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 5,
+              "y": 2
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          },
+          "md": {
+            "location": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "ebc6372b-3c63-486a-a4f5-eae0e82c9553",
+        "name": "Little Link",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://raw.githubusercontent.com/sethcottle/littlelink/main/images/littlelink.svg",
+          "appNameStatus": "normal",
+          "positionAppName": "column",
+          "appNameFontSize": 16,
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 5,
+              "y": 1
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          },
+          "md": {
+            "location": {
+              "x": 4,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "512d211a-464f-464b-83ac-3f617a93a9ed",
+        "name": "Alta Labs",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://forum.alta.inc/uploads/default/original/1X/2d619eba28633d4e924f064c4b6b976b76c02085.png",
+          "appNameStatus": "normal",
+          "appNameFontSize": 16,
+          "positionAppName": "column",
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200",
+            "301",
+            "302",
+            "304",
+            "307",
+            "308"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "1a0edc5a-c410-4018-b23c-17691733032f"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 3,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "6bf04081-fb54-4ed9-9e01-a4a50ba70131",
+        "name": "Proxmox",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png",
+          "appNameStatus": "normal",
+          "positionAppName": "column",
+          "appNameFontSize": 16,
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "4ad7dade-c3b6-46ab-b385-a3f6fa6d9186"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          },
+          "md": {
+            "location": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      },
+      {
+        "id": "aa63d4a8-6b45-4413-8c50-24fca4bad64e",
+        "name": "Shlink",
+        "url": "https://subdomain.domain.com",
+        "appearance": {
+          "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/shlink.png",
+          "appNameStatus": "normal",
+          "appNameFontSize": 16,
+          "positionAppName": "column",
+          "lineClampAppName": 1
+        },
+        "network": {
+          "enabledStatusChecker": true,
+          "statusCodes": [
+            "200",
+            "301",
+            "302",
+            "304",
+            "307",
+            "308"
+          ]
+        },
+        "behaviour": {
+          "isOpeningNewTab": true,
+          "externalUrl": "https://subdomain.domain.com"
+        },
+        "area": {
+          "type": "category",
+          "properties": {
+            "id": "d6119bf1-3d1d-4648-92fd-f3bc57be53c3"
+          }
+        },
+        "shape": {
+          "lg": {
+            "location": {
+              "x": 6,
+              "y": 2
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            }
+          }
+        },
+        "integration": {
+          "type": null,
+          "properties": []
+        }
+      }
+    ],
+    "widgets": [
+      {
+        "id": "e3004052-6b83-480e-b458-56e8ccdca5f0",
+        "type": "weather",
+        "properties": {
+          "displayInFahrenheit": false,
+          "location": {
+            "name": "Québec",
+            "latitude": 46.81228,
+            "longitude": -71.21454
+          }
+        },
+        "area": {
+          "type": "wrapper",
+          "properties": {
+            "id": "default"
+          }
+        },
+        "shape": {
+          "md": {
+            "location": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          },
+          "sm": {
+            "location": {
+              "x": 1,
+              "y": 0
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          },
+          "lg": {
+            "location": {
+              "x": 4,
+              "y": 0
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          }
+        }
+      },
+      {
+        "id": "971aa859-8570-49a1-8d34-dd5c7b3638d1",
+        "type": "date",
+        "properties": {
+          "display24HourFormat": true
+        },
+        "area": {
+          "type": "wrapper",
+          "properties": {
+            "id": "default"
+          }
+        },
+        "shape": {
+          "sm": {
+            "location": {
+              "x": 0,
+              "y": 1
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          },
+          "md": {
+            "location": {
+              "x": 4,
+              "y": 0
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          },
+          "lg": {
+            "location": {
+              "x": 7,
+              "y": 0
+            },
+            "size": {
+              "width": 2,
+              "height": 1
+            }
+          }
+        }
+      }
+    ],
+    "settings": {
+      "common": {
+        "searchEngine": {
+          "type": "google",
+          "properties": {
+            "openInNewTab": false
+          }
+        }
+      },
+      "customization": {
+        "layout": {
+          "enabledLeftSidebar": false,
+          "enabledRightSidebar": false,
+          "enabledDocker": false,
+          "enabledPing": false,
+          "enabledSearchbar": true
+        },
+        "pageTitle": "Homarr",
+        "logoImageUrl": "/imgs/logo/logo.png",
+        "faviconUrl": "/imgs/favicon/favicon-squared.png",
+        "backgroundImageUrl": "",
+        "customCss": "",
+        "colors": {
+          "primary": "red",
+          "secondary": "yellow",
+          "shade": 7
+        },
+        "appOpacity": 100
+      }
+    }
+  }
