@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  portainer:
+    container_name: portainer
+    environment:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    image: portainer/portainer-ce:latest
+    logging:
+      driver: json-file
+      options:
+        max-file: "5"
+        max-size: 10m
+    ports:
+      - mode: ingress
+        target: 8000
+        published: "8001"
+        protocol: tcp
+      - mode: ingress
+        target: 9443
+        published: "9443"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /opt/portainer
+        target: /data
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+        bind:
+          create_host_path: true
