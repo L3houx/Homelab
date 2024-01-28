@@ -1,0 +1,167 @@
+# Nginx Proxy Manager with other containers
+name: https-containers
+services:
+  # Nginx Proxy Manager
+  nginx-proxy-manager:
+    container_name: nginx-proxy-manager
+    image: jc21/nginx-proxy-manager:latest
+    logging:
+      driver: json-file
+      options:
+        max-file: "5"
+        max-size: 10m
+    ports:
+      - mode: ingress
+        target: 80
+        published: "80"
+        protocol: tcp
+      - mode: ingress
+        target: 81
+        published: "81"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "443"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /opt/nginx-proxy-manager/data
+        target: /data
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /opt/nginx-proxy-manager/etc/letsencrypt
+        target: /etc/letsencrypt
+        bind:
+          create_host_path: true
+    networks:
+      - nginxpm
+    privileged: false
+
+  # Guacamole
+  guacamole:
+    container_name: guacamole
+    environment:
+      - EXTENSIONS=auth-totp
+      - TZ=UTC
+    image: flcontainers/guacamole
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /opt/Guacamole/postgres
+        target: /config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /etc/localtime
+        target: /etc/localtime
+        bind:
+          create_host_path: true
+    networks:
+      - nginxpm
+
+  # Homarr
+  homarr:
+    container_name: homarr
+    image: ghcr.io/ajnart/homarr:latest
+    logging:
+      driver: json-file
+      options:
+        max-file: "5"
+        max-size: 10m
+    ports:
+      - mode: ingress
+        target: 7575
+        published: "7575"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /opt/homarr/configs
+        target: /app/data/configs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /opt/homarr/icons
+        target: /app/public/icons
+        bind:
+          create_host_path: true
+    networks:
+      - nginxpm
+
+  # Portainer
+  portainer:
+    container_name: portainer
+    environment:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    image: portainer/portainer-ce:latest
+    logging:
+      driver: json-file
+      options:
+        max-file: "5"
+        max-size: 10m
+    ports:
+      - mode: ingress
+        target: 8000
+        published: "8001"
+        protocol: tcp
+      - mode: ingress
+        target: 9443
+        published: "9443"
+        protocol: tcp
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - type: bind
+        source: /opt/portainer
+        target: /data
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+        bind:
+          create_host_path: true
+    networks:
+      - nginxpm
+
+  # Yacht
+  yacht:
+    container_name: yacht
+    image: selfhostedpro/yacht
+    logging:
+      driver: json-file
+      options:
+        max-file: "5"
+        max-size: 10m
+    ports:
+      - mode: ingress
+        target: 8000
+        published: "8000"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /opt/yacht/
+        target: /config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+        bind:
+          create_host_path: true
+    networks:
+      - nginxpm
+
+# Networks
+networks:
+  nginxpm:
+    name: network_nginxpm
