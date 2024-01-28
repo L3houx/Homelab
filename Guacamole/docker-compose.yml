@@ -1,0 +1,26 @@
+name: guacamole
+services:
+  guacamole:
+    container_name: Guacamole
+    image: flcontainers/guacamole
+    environment:
+      - PGID=1000
+      - PUID=1000
+    ports:
+      - '8080':'8080'
+    environment:
+      - EXTENSIONS=auth-totp
+      - TZ=UTC
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /opt/Guacamole/postgres
+        target: /config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /etc/localtime
+        target: /etc/localtime
+        read_only: true
+        bind:
+          create_host_path: true
