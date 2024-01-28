@@ -1,0 +1,84 @@
+version: '3.4'
+
+services:
+  vectr-mongo:
+    image: mongo:4.2
+    networks:
+      - vectr_bridge
+    volumes:
+      #- ${VECTR_DATA_DIR:-./data/}${COMPOSE_PROJECT_NAME}:/data/db
+      - vectr-db:/data/db
+    env_file:
+      - ./.env
+    restart: unless-stopped
+
+  vectr-tomcat:
+    image: securityriskadvisors/vectr_tomcat:8.9.2
+    networks:
+      vectr_bridge:
+        aliases:
+          - ${VECTR_HOSTNAME}
+    volumes:
+      #- ./resources:/opt/vectr/resources
+      - vectr-resources:/opt/vectr/resources
+      - ./user:/opt/vectr/user
+      #- vectr-user:/opt/vectr/user
+      #- ./logs:/usr/local/tomcat/logs
+      - vectr-logs:/usr/local/tomcat/logs
+      - builder-runtimes:/opt/vectr/rta
+    env_file:
+      - ./.env
+    ports:
+      - "${VECTR_PORT:-8081}:8443"
+    restart: unless-stopped
+    depends_on:
+      - vectr-mongo
+
+  vectr-rta-webserver:
+    image: securityriskadvisors/rta_webserver:1.5.7
+    networks:
+      - vectr_bridge
+    depends_on:
+      - vectr-rta-redis
+    restart: unless-stopped
+
+  vectr-rta-builder:
+    image: securityriskadvisors/rta_builder:1.5.7
+    networks:
+      - vectr_bridge
+    volumes:
+      - builder-runtimes:/builds
+    env_file:
+      - ./.env
+    depends_on:
+      - vectr-rta-redis
+    restart: unless-stopped
+
+  vectr-rta-redis:
+    image: redis:6.2-bullseye
+    volumes:
+      - redis-db:/data
+    networks:
+      - vectr_bridge
+    restart: unless-stopped
+
+networks:
+  vectr_bridge:
+    ipam:
+      driver: default
+      config:
+        - subnet: "${VECTR_NETWORK_SUBNET:-10.0.27.0/24}"
+
+volumes:
+  vectr-logs:
+    name: ${COMPOSE_PROJECT_NAME}-vectr-logs
+  vectr-resources:
+    name: ${COMPOSE_PROJECT_NAME}-vectr-resources
+  vectr-user:
+    name: ${COMPOSE_PROJECT_NAME}-vectr-user
+  vectr-db:
+    name: ${COMPOSE_PROJECT_NAME}-vectr-db
+  builder-runtimes:
+    name: ${COMPOSE_PROJECT_NAME}-builder-runtimes
+  redis-db:
+    name: ${COMPOSE_PROJECT_NAME}-redis-db
