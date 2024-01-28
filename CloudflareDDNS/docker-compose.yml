@@ -1,0 +1,19 @@
+name: cloudflare-ddns
+services:
+  cloudflare-ddns:
+    environment:
+      - PGID=1000
+      - PUID=1000
+    image: timothyjmiller/cloudflare-ddns:latest
+    logging:
+      driver: json-file
+      options:
+        max-file: "5"
+        max-size: 10m
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /opt/cloudflare_ddns/config.json
+        target: /config.json
+        bind:
+          create_host_path: true
