@@ -47,7 +47,7 @@
       {
         "id": "3334547c-d4cf-4f35-a6a7-d7b775a47774",
         "name": "Nginx Proxy Manager",
-        "url": "https://subdomain.domain.com",
+        "url": "https://nginx.domain.com",
         "appearance": {
           "iconUrl": "https://nginxproxymanager.com/icon.png",
           "appNameStatus": "normal",
@@ -68,7 +68,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://nginx.domain.com"
         },
         "area": {
           "type": "category",
@@ -96,7 +96,7 @@
       {
         "id": "70fde853-ca52-41f9-965c-f66f5e5c08ee",
         "name": "Uptime Kuma",
-        "url": "https://subdomain.domain.com",
+        "url": "https://uptimekuma.domain.com",
         "appearance": {
           "iconUrl": "https://cdn.jsdelivr.net/gh/loganmarchione/homelab-svg-assets/assets/uptimekuma.svg",
           "appNameStatus": "normal",
@@ -112,7 +112,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://uptimekuma.domain.com"
         },
         "area": {
           "type": "category",
@@ -150,7 +150,7 @@
       {
         "id": "22631bc8-9cb3-4554-b933-37471758fcb3",
         "name": "Yacht Lab",
-        "url": "https://subdomain.domain.com",
+        "url": "https://yacht.domain.com",
         "appearance": {
           "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/yacht.png",
           "appNameStatus": "normal",
@@ -166,7 +166,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://yacht.domain.com"
         },
         "area": {
           "type": "category",
@@ -204,7 +204,7 @@
       {
         "id": "b1b0d8fa-088e-4728-acdc-d9fc3ab4afa1",
         "name": "Portainer Lab",
-        "url": "https://subdomain.domain.com",
+        "url": "https://portainer.domain.com",
         "appearance": {
           "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/portainer.png",
           "appNameStatus": "normal",
@@ -220,7 +220,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://portainer.domain.com"
         },
         "area": {
           "type": "category",
@@ -258,7 +258,7 @@
       {
         "id": "d760380b-08db-47e7-a5ad-3b90665c02d7",
         "name": "CasaOs",
-        "url": "https://subdomain.domain.com",
+        "url": "https://casaos.domain.com",
         "appearance": {
           "iconUrl": "https://noted.lol/content/images/size/w1000/2023/01/casaos.png",
           "appNameStatus": "normal",
@@ -279,7 +279,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://casaos.domain.com"
         },
         "area": {
           "type": "category",
@@ -307,7 +307,7 @@
       {
         "id": "a3f1520b-dfa2-418e-b0c4-1b57a766a15d",
         "name": "Portainer DMZ",
-        "url": "https://subdomain.domain.com",
+        "url": "https://portainer.dmz.domain.com",
         "appearance": {
           "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/portainer.png",
           "appNameStatus": "normal",
@@ -323,7 +323,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://portainer.dmz.domain.com"
         },
         "area": {
           "type": "category",
@@ -361,7 +361,7 @@
       {
         "id": "f04d9b2e-0178-41b9-a458-9b46357e5da3",
         "name": "Guacamole",
-        "url": "https://subdomain.domain.com",
+        "url": "https://guacamole.domain.com",
         "appearance": {
           "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/guacamole.png",
           "appNameStatus": "normal",
@@ -382,7 +382,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://guacamole.domain.com"
         },
         "area": {
           "type": "category",
@@ -410,7 +410,7 @@
       {
         "id": "9e6e095d-1dfc-4fbc-a068-f4e8451ff2f2",
         "name": "Unifi",
-        "url": "https://subdomain.domain.com",
+        "url": "https://unifi.domain.com",
         "appearance": {
           "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/unifi.png",
           "appNameStatus": "normal",
@@ -426,7 +426,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://unifi.domain.com"
         },
         "area": {
           "type": "category",
@@ -464,7 +464,7 @@
       {
         "id": "bba580b2-8548-43ab-8750-e93b722f20e6",
         "name": "Pihole",
-        "url": "https://subdomain.domain.com",
+        "url": "https://pihole.domain.com",
         "appearance": {
           "iconUrl": "https://wp-cdn.pi-hole.net/wp-content/uploads/2016/12/Vortex-R.png",
           "appNameStatus": "normal",
@@ -518,7 +518,7 @@
       {
         "id": "e8a046b1-62cb-4dd2-8978-03b7060c025a",
         "name": "Traefik",
-        "url": "https://subdomain.domain.com",
+        "url": "https://traefik.domain.com",
         "appearance": {
           "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/traefik.png",
           "appNameStatus": "normal",
@@ -534,7 +534,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://traefik.domain.com"
         },
         "area": {
           "type": "category",
@@ -572,7 +572,7 @@
       {
         "id": "b808bfcd-9de6-4a1a-bf1e-ad0fe9b822f8",
         "name": "pfSense",
-        "url": "https://subdomain.domain.com",
+        "url": "https://pfsense.domain.com",
         "appearance": {
           "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pfsense.png",
           "appNameStatus": "normal",
@@ -588,7 +588,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://pfsense.domain.com"
         },
         "area": {
           "type": "category",
@@ -626,7 +626,7 @@
       {
         "id": "294394a6-8afb-4de7-a320-2f72e693e636",
         "name": "Pwndrop",
-        "url": "https://subdomain.domain.com",
+        "url": "https://pwndrop.domain.com",
         "appearance": {
           "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pwndrop.png",
           "appNameStatus": "normal",
@@ -642,7 +642,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://pwndrop.domain.com"
         },
         "area": {
           "type": "category",
@@ -680,7 +680,7 @@
       {
         "id": "ebc6372b-3c63-486a-a4f5-eae0e82c9553",
         "name": "Little Link",
-        "url": "https://subdomain.domain.com",
+        "url": "https://littlelink.domain.com",
         "appearance": {
           "iconUrl": "https://raw.githubusercontent.com/sethcottle/littlelink/main/images/littlelink.svg",
           "appNameStatus": "normal",
@@ -696,7 +696,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://littlelink.domain.com"
         },
         "area": {
           "type": "category",
@@ -734,7 +734,7 @@
       {
         "id": "512d211a-464f-464b-83ac-3f617a93a9ed",
         "name": "Alta Labs",
-        "url": "https://subdomain.domain.com",
+        "url": "https://alta.domain.com",
         "appearance": {
           "iconUrl": "https://forum.alta.inc/uploads/default/original/1X/2d619eba28633d4e924f064c4b6b976b76c02085.png",
           "appNameStatus": "normal",
@@ -755,7 +755,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://alta.domain.com"
         },
         "area": {
           "type": "category",
@@ -783,7 +783,7 @@
       {
         "id": "6bf04081-fb54-4ed9-9e01-a4a50ba70131",
         "name": "Proxmox",
-        "url": "https://subdomain.domain.com",
+        "url": "https://proxmox.domain.com",
         "appearance": {
           "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png",
           "appNameStatus": "normal",
@@ -799,7 +799,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://proxmox.domain.com"
         },
         "area": {
           "type": "category",
@@ -837,7 +837,7 @@
       {
         "id": "aa63d4a8-6b45-4413-8c50-24fca4bad64e",
         "name": "Shlink",
-        "url": "https://subdomain.domain.com",
+        "url": "https://shlink.domain.com",
         "appearance": {
           "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/shlink.png",
           "appNameStatus": "normal",
@@ -858,7 +858,7 @@
         },
         "behaviour": {
           "isOpeningNewTab": true,
-          "externalUrl": "https://subdomain.domain.com"
+          "externalUrl": "https://shlink.domain.com"
         },
         "area": {
           "type": "category",
